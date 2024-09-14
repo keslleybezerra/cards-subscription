@@ -1,0 +1,250 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "montserrat", sans-serif;
+}
+
+.container {
+  width: 72rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  padding-top: 4rem;
+  gap: 1.8rem;
+}
+
+.container .card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border-radius: 1.2rem;
+  border: 1px solid #dfdfdf;
+  overflow: hidden;
+}
+
+.container .card.with-status {
+  margin-top: -1.2rem;
+}
+
+.container .card header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.8rem 1.4rem;
+  gap: 0.8;
+  background-color: #fff;
+}
+
+.container .card header .logo {
+  display: flex;
+  gap: 0.9rem;
+  flex: 1;
+}
+
+.container .card header .logo img {
+  width: 1.6rem;
+  height: 1.6rem;
+}
+
+.container .card header .logo span {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.container .card header .next-payment {
+  display: flex;
+  gap: 0.9rem;
+}
+
+.container .card header .next-payment span {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.container .card header .next-payment .status span {
+  background-color: #eaf9ef;
+  border-radius: 1.4rem;
+  border: 1px solid #c8ead1;
+  padding: 0.3rem 0.7rem;
+  color: #029e2d;
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
+.card header .next-payment .status.mode span {
+  background-color: #fbecec;
+  color: #e54343;
+  border: 1px solid #f0c1c0;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  padding: 0 1.8rem;
+}
+
+.content .header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.4rem 1.3rem;
+  background-color: #f7f8fa;
+  border-top-left-radius: 0.6rem;
+  border-top-right-radius: 0.6rem;
+  border-bottom: 1px solid #e3e3e5;
+}
+
+.content .header .info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.content .header .info strong {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.content .header .info span {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.content .header .info span .yr {
+  font-weight: 400;
+}
+
+.content .buttons {
+  display: flex;
+  gap: 0.8rem;
+}
+
+.content .buttons button {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 0.8rem;
+  border-radius: 0.6rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  border: 1px solid #e3e3e5;
+  background-color: #ffffff;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.content .buttons button.active {
+  background-color: #3076f8;
+  border-color: #296ce7;
+  color: #fff;
+}
+
+.content .footer {
+  display: flex;
+  padding: 1.4rem 1.2rem;
+  border-bottom-left-radius: 0.6rem;
+  border-bottom-right-radius: 0.6rem;
+  background-color: #f7f8fa;
+  justify-content: space-between;
+}
+
+.content .footer .info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.content .footer .info strong {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.content .footer .info .card-icon {
+  display: flex;
+  gap: 0.7rem;
+}
+
+.content .footer .info img {
+  width: 2rem;
+  height: 1.6rem;
+}
+
+.content .footer .info p {
+  font-size: 1.2rem;
+}
+
+.content .button {
+  display: flex;
+  gap: 0.8rem;
+}
+
+.content .button button {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 0.8rem;
+  border-radius: 0.6rem;
+  border: 1px solid #e3e3e5;
+  background-color: #ffffff;
+  color: rgba(0, 0, 0, 0.7);
+  font-weight: 600;
+}
+
+.container .footer-targets {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.1rem 1.8rem;
+}
+
+.container .footer-targets .final-text {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.container .footer-targets .target-icon {
+  width: 2.4rem;
+  height: 2.4rem;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.container .card-status .status-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 0.8rem;
+  padding-bottom: 1.8rem;
+  gap: 0.8rem;
+  height: 4.5rem;
+  border-top-left-radius: 1.2rem;
+  border-top-right-radius: 1.2rem;
+  background-color: #3076f8;
+}
+
+.container .card-status .status-box.error {
+  background-color: #e54343;
+}
+
+.container .card-status .status-box img {
+  width: 1.6rem;
+  height: 1.6rem;
+}
+
+.container .card-status .status-box p {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.container .card-status .card-action {
+  display: flex;
+  flex-direction: column;
+  width: 72rem;
+  border-radius: 1.2rem;
+  border: 1px solid #dfdfdf;
+}
